@@ -1,3 +1,4 @@
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -10,6 +11,9 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    color: #e8c8d9;
+
+   
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
@@ -31,5 +35,5 @@
 .footer p {
 	margin-top: 25px;
 	font-size: 12px;
-  color: #fff;
+  color: #ffffff;
 }
