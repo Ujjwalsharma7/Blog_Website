@@ -5,7 +5,10 @@
 <p>  <%= startingContent %></p>
 
 <% for(let i = 0; i<posts.length;i++){ %>
-<% console.log(posts[i].postTitle) %>
+
+<h1> <%= posts[i].postTitle %> </h1>
+<p> <%= posts[i].content %> </p>
+
 <% } %> 
 
 <%- include("partials/footer"); -%>
