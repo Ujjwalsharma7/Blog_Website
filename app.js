@@ -37,6 +37,20 @@ app.get("/compose", function(req, res){
  
 })
 
+app.get('/posts/:postName',function (req, res) {
+const requestedTitle = req.params.postName
+
+posts.forEach(function(post){
+  let storedTitle = post.postTitle
+
+if (storedTitle == requestedTitle){
+  console.log("Match Found")
+}
+})
+});
+
+
+
 app.post("/compose", function(req, res){
 const post = {
   postTitle: req.body.composeBlog,
@@ -49,6 +63,7 @@ res.redirect("/");
 
 
 })
+
 
 
 
